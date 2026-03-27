@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GlobeFarms Venture Agritech Ltd – Africa's Leading Youth-Driven Agritech Ecosystem</title>
+ 
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet"/>
+ 
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+ 
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ 
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav id="navbar">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+ 
+    <!-- Logo -->
+    <a href="#" class="flex items-center gap-3">
+      <div style="width:36px;height:36px;background:var(--forest);border-radius:6px;display:flex;align-items:center;justify-content:center;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12"/>
+          <path d="M2 12C2 6.48 6.48 2 12 2"/>
+          <path d="M12 6v6l4 2"/>
+        </svg>
+      </div>
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--forest-deep);line-height:1.1;">GlobeFarms</div>
+        <div style="font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);font-weight:500;">Venture Agritech Ltd</div>
+      </div>
+    </a>
+ 
+    <!-- Desktop Links -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#impact"   style="font-size:0.85rem;color:var(--muted);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--forest)'" onmouseout="this.style.color='var(--muted)'">Impact</a>
+      <a href="#smartlab" style="font-size:0.85rem;color:var(--muted);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--forest)'" onmouseout="this.style.color='var(--muted)'">Smart Lab</a>
+      <a href="#team"     style="font-size:0.85rem;color:var(--muted);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--forest)'" onmouseout="this.style.color='var(--muted)'">Team</a>
+      <a href="#contact" class="btn-primary" style="padding:0.6rem 1.4rem;font-size:0.82rem;">Partner With Us</a>
+    </div>
+ 
+    <!-- Mobile Hamburger -->
+    <button id="menuBtn" class="md:hidden" style="background:none;border:none;cursor:pointer;padding:4px;" onclick="toggleMenu()">
+      <i data-lucide="menu" style="width:22px;height:22px;color:var(--forest);"></i>
+    </button>
+  </div>
+ 
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" style="background:var(--ivory);border-top:1px solid rgba(27,67,50,0.08);padding:1.25rem 1.5rem;margin-top:0.5rem;">
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <a href="#impact"   onclick="toggleMenu()" style="font-size:0.9rem;color:var(--muted);text-decoration:none;">Impact</a>
+      <a href="#smartlab" onclick="toggleMenu()" style="font-size:0.9rem;color:var(--muted);text-decoration:none;">Smart Lab</a>
+      <a href="#team"     onclick="toggleMenu()" style="font-size:0.9rem;color:var(--muted);text-decoration:none;">Team</a>
+      <a href="#contact"  onclick="toggleMenu()" class="btn-primary" style="padding:0.65rem 1.25rem;font-size:0.85rem;text-align:center;">Partner With Us</a>
+    </div>
+  </div>
+</nav>
+ 
+ 
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero-bg" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:8rem 0 5rem;">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
+ 
+  <div class="max-w-7xl mx-auto px-6 w-full">
+    <div style="max-width:860px;">
+ 
+      <!-- Badge -->
+      <div class="hero-badge hero-enter" style="margin-bottom:2rem;">
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="var(--gold)"><circle cx="5" cy="5" r="5"/></svg>
+        Osun State · Registered 2024 · Nigeria
+      </div>
+ 
+      <!-- Headline -->
+      <h1 class="hero-title hero-enter-delay-1" style="margin-bottom:1.75rem;">
+        Africa's Leading<br>
+        <span class="accent">Youth-Driven</span><br>
+        Agritech Ecosystem
+      </h1>
+ 
+      <!-- Subheadline -->
+      <p class="hero-sub hero-enter-delay-2" style="margin-bottom:2.75rem;">
+        Bridging the wisdom of traditional farming with the precision of modern agricultural technology —
+        building food-secure, economically empowered communities across Nigeria and beyond.
+      </p>
+ 
+      <!-- CTA Buttons -->
+      <div class="hero-enter-delay-3" style="display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:5rem;">
+        <a href="#impact" class="btn-primary">
+          View Impact Dashboard
+          <i data-lucide="arrow-down" style="width:16px;height:16px;"></i>
+        </a>
+        <a href="#contact" class="btn-outline">
+          Explore Partnership
+          <i data-lucide="external-link" style="width:16px;height:16px;"></i>
+        </a>
+      </div>
+ 
+      <!-- Scroll indicator -->
+      <div class="hero-enter-delay-4 scroll-indicator">
+        <div class="scroll-line"></div>
+        Scroll to explore
+      </div>
+    </div>
+ 
+    <!-- Hero Stats Strip -->
+    <div class="hero-enter-delay-4" style="margin-top:4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0;border-top:1px solid rgba(250,247,240,0.1);padding-top:2.5rem;">
+      <div style="padding-right:2rem;padding-bottom:1rem;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:600;color:var(--gold);line-height:1;">310+</div>
+        <div style="font-size:0.78rem;color:rgba(250,247,240,0.5);letter-spacing:0.05em;margin-top:0.25rem;">Hectares</div>
+      </div>
+      <div style="padding-right:2rem;padding-bottom:1rem;border-left:1px solid rgba(250,247,240,0.1);padding-left:2rem;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:600;color:var(--gold);line-height:1;">6,500+</div>
+        <div style="font-size:0.78rem;color:rgba(250,247,240,0.5);letter-spacing:0.05em;margin-top:0.25rem;">Youth Trained Annually</div>
+      </div>
+      <div style="padding-right:2rem;padding-bottom:1rem;border-left:1px solid rgba(250,247,240,0.1);padding-left:2rem;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:600;color:var(--gold);line-height:1;">30%</div>
+        <div style="font-size:0.78rem;color:rgba(250,247,240,0.5);letter-spacing:0.05em;margin-top:0.25rem;">Productivity Increase</div>
+      </div>
+      <div style="padding-bottom:1rem;border-left:1px solid rgba(250,247,240,0.1);padding-left:2rem;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:600;color:var(--gold);line-height:1;">5+</div>
+        <div style="font-size:0.78rem;color:rgba(250,247,240,0.5);letter-spacing:0.05em;margin-top:0.25rem;">Policy Dialogues</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+ 
+<!-- ============================================================
+     MARQUEE TICKER
+     ============================================================ -->
+<div style="background:var(--forest);padding:1rem 0;overflow:hidden;">
+  <div class="marquee-wrapper">
+    <div class="marquee-track" style="font-size:0.78rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,247,240,0.6);">
+      <span style="color:var(--gold);">✦</span>&nbsp; Smart Irrigation &nbsp;
+      <span style="color:var(--gold);">✦</span>&nbsp; Precision Agriculture &nbsp;
+      <span style="color:var(--gold);">✦</span>&nbsp; Youth Employment &nbsp;
+      <span style="color:var(--gold);">✦</span>&nbsp; Food Security &nbsp;
+      <span style="color:var(--gold);">✦</span>&nbsp; Government Partnership &nbsp;
+      <span style="color:var(--gold);">✦</span>&nbsp; IoT Farm Dashboards &nbsp;
+      <span style="color:var(--gold);">✦</span>&nbsp; Solar-Powered Systems &nbsp;
+      <span style="color:var(--gold);">✦</span>&nbsp; Export-Ready Produce &nbsp;
+      <span style="color:var(--gold);">✦</span>&nbsp; Climate-Smart Farming &nbsp;
+      <!-- Duplicate for seamless loop -->
+      <span style="color:var(--gold);">✦</span>&nbsp; Smart Irrigation &nbsp;
+      <span style="color:var(--gold);">✦</span>&nbsp; Precision Agriculture &nbsp;
+      <span style="color:var(--gold);">✦</span>&nbsp; Youth Employment &nbsp;
+      <span style="color:var(--gold);">✦</span>&nbsp; Food Security &nbsp;
+      <span style="color:var(--gold);">✦</span>&nbsp; Government Partnership &nbsp;
+      <span style="color:var(--gold);">✦</span>&nbsp; IoT Farm Dashboards &nbsp;
+      <span style="color:var(--gold);">✦</span>&nbsp; Solar-Powered Systems &nbsp;
+      <span style="color:var(--gold);">✦</span>&nbsp; Export-Ready Produce &nbsp;
+      <span style="color:var(--gold);">✦</span>&nbsp; Climate-Smart Farming &nbsp;
+    </div>
+  </div>
+</div>
+ 
+ 
+<!-- ============================================================
+     ABOUT / MISSION
+     ============================================================ -->
+<section style="padding:7rem 0;background:white;" id="about">
+  <div class="max-w-7xl mx-auto px-6">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;" class="md-grid-1">
+ 
+      <!-- Left: Text -->
+      <div class="reveal">
+        <div class="section-label">Our Mission</div>
+        <h2 class="section-title" style="margin-bottom:1.5rem;">
+          Redefining what<br><span class="em">African agriculture</span><br>can become
+        </h2>
+        <div class="gold-divider"></div>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:1.5rem;font-size:0.95rem;">
+          GlobeFarms Venture Agritech Ltd was born from a simple conviction: that Africa's greatest agricultural
+          challenges are also her greatest opportunities. Founded by a 20-year-old Engineer, we are proving that
+          youth, technology, and ambition can transform food systems at scale.
+        </p>
+        <p style="color:var(--muted);line-height:1.8;font-size:0.95rem;">
+          Operating across 310+ hectares of smart farmland in Nigeria — with a freshly allocated 10 hectares from
+          the Osun State Government — we integrate solar-powered irrigation, IoT sensor networks, and data-driven
+          crop management into every field we touch.
+        </p>
+        <div style="margin-top:2.5rem;display:flex;align-items:center;gap:1.5rem;">
+          <div style="display:flex;align-items:center;gap:0.5rem;">
+            <div style="width:10px;height:10px;border-radius:50%;background:var(--forest-light);"></div>
+            <span style="font-size:0.82rem;color:var(--muted);">Registered in Nigeria</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:0.5rem;">
+            <div style="width:10px;height:10px;border-radius:50%;background:var(--gold);"></div>
+            <span style="font-size:0.82rem;color:var(--muted);">Government-backed</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:0.5rem;">
+            <div style="width:10px;height:10px;border-radius:50%;background:var(--forest);"></div>
+            <span style="font-size:0.82rem;color:var(--muted);">VC-ready</span>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Right: Dark info panel -->
+      <div class="reveal" style="position:relative;">
+        <div style="background:var(--forest);border-radius:12px;padding:3rem;position:relative;overflow:hidden;">
+          <div style="position:absolute;top:-30px;right:-30px;width:180px;height:180px;border-radius:50%;background:rgba(201,168,76,0.1);"></div>
+          <div style="position:absolute;bottom:-20px;left:-20px;width:120px;height:120px;border-radius:50%;background:rgba(64,145,108,0.15);"></div>
+ 
+          <div class="quote-block" style="position:relative;z-index:1;margin-bottom:2.5rem;">
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;font-style:italic;color:var(--ivory);line-height:1.5;margin-bottom:1rem;">
+              "We are not just farming land. We are cultivating the next generation of Africa's food innovators."
+            </p>
+            <p style="font-size:0.8rem;color:var(--gold);font-weight:500;">— Engr. Favour David A., MD/CEO</p>
+          </div>
+ 
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;position:relative;z-index:1;">
+            <div style="background:rgba(255,255,255,0.07);border-radius:8px;padding:1.25rem;border:1px solid rgba(255,255,255,0.1);">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:var(--gold);">2024</div>
+              <div style="font-size:0.75rem;color:rgba(250,247,240,0.5);margin-top:0.25rem;">Year Founded</div>
+            </div>
+            <div style="background:rgba(255,255,255,0.07);border-radius:8px;padding:1.25rem;border:1px solid rgba(255,255,255,0.1);">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:var(--gold);">20yrs</div>
+              <div style="font-size:0.75rem;color:rgba(250,247,240,0.5);margin-top:0.25rem;">Founder's Age</div>
+            </div>
+            <div style="background:rgba(255,255,255,0.07);border-radius:8px;padding:1.25rem;border:1px solid rgba(255,255,255,0.1);">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:var(--gold);">Osun</div>
+              <div style="font-size:0.75rem;color:rgba(250,247,240,0.5);margin-top:0.25rem;">State HQ, Nigeria</div>
+            </div>
+            <div style="background:rgba(255,255,255,0.07);border-radius:8px;padding:1.25rem;border:1px solid rgba(255,255,255,0.1);">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:var(--gold);">EEE</div>
+              <div style="font-size:0.75rem;color:rgba(250,247,240,0.5);margin-top:0.25rem;">Electrical Engineering</div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+ 
+ 
+<!-- ============================================================
+     IMPACT DASHBOARD
+     ============================================================ -->
+<section id="impact" class="impact-bg" style="padding:7rem 0;">
+  <div class="max-w-7xl mx-auto px-6">
+ 
+    <!-- Section Header -->
+    <div style="text-align:center;margin-bottom:4rem;" class="reveal">
+      <div class="section-label" style="justify-content:center;">Impact Dashboard</div>
+      <h2 class="section-title">Numbers that <span class="em">speak</span></h2>
+      <p style="color:var(--muted);max-width:520px;margin:1.25rem auto 0;line-height:1.7;font-size:0.95rem;">
+        Measurable outcomes, verified impact. These figures represent lives changed, land transformed, and a movement taking shape.
+      </p>
+    </div>
+ 
+    <!-- Stat Cards Grid -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;">
+ 
+      <div class="stat-card reveal">
+        <div style="width:44px;height:44px;background:#f0f7f4;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;color:var(--forest-light);">
+          <i data-lucide="map" style="width:22px;height:22px;"></i>
+        </div>
+        <div class="stat-number">310+</div>
+        <div style="font-size:0.78rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-top:0.5rem;">Hectares Managed</div>
+        <div class="gold-divider" style="margin:1rem 0;width:36px;"></div>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;">
+          Including 10 hectares newly allocated by the Osun State Government — a landmark endorsement of our model.
+        </p>
+      </div>
+ 
+      <div class="stat-card reveal" style="transition-delay:0.1s;">
+        <div style="width:44px;height:44px;background:#f0f7f4;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;color:var(--forest-light);">
+          <i data-lucide="users" style="width:22px;height:22px;"></i>
+        </div>
+        <div class="stat-number">6,500+</div>
+        <div style="font-size:0.78rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-top:0.5rem;">Youth Trained Annually</div>
+        <div class="gold-divider" style="margin:1rem 0;width:36px;"></div>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;">
+          Equipping young Nigerians with precision farming skills, agribusiness acumen, and digital agriculture tools.
+        </p>
+      </div>
+ 
+      <div class="stat-card reveal" style="transition-delay:0.2s;">
+        <div style="width:44px;height:44px;background:#f0f7f4;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;color:var(--forest-light);">
+          <i data-lucide="trending-up" style="width:22px;height:22px;"></i>
+        </div>
+        <div class="stat-number">30%</div>
+        <div style="font-size:0.78rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-top:0.5rem;">Productivity Increase</div>
+        <div class="gold-divider" style="margin:1rem 0;width:36px;"></div>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;">
+          Average yield improvement across pilot farms using our data-driven and precision agriculture interventions.
+        </p>
+      </div>
+ 
+      <div class="stat-card reveal" style="transition-delay:0.3s;">
+        <div style="width:44px;height:44px;background:#f0f7f4;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;color:var(--forest-light);">
+          <i data-lucide="landmark" style="width:22px;height:22px;"></i>
+        </div>
+        <div class="stat-number">5+</div>
+        <div style="font-size:0.78rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-top:0.5rem;">Policy Dialogues</div>
+        <div class="gold-divider" style="margin:1rem 0;width:36px;"></div>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;">
+          Active engagements with state ministries, NGO partners, and international development organisations shaping ag-policy.
+        </p>
+      </div>
+ 
+    </div>
+ 
+    <!-- Progress Bars + Timeline Panel -->
+    <div style="margin-top:4rem;background:white;border-radius:12px;padding:3rem;border:1px solid rgba(27,67,50,0.08);" class="reveal">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;" class="md-grid-1">
+ 
+        <!-- Progress Bars -->
+        <div>
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.75rem;font-weight:400;color:var(--forest-deep);margin-bottom:2rem;">Operational Scale</h3>
+ 
+          <div style="margin-bottom:1.75rem;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;">
+              <span style="font-size:0.82rem;font-weight:500;color:var(--charcoal);">Smart Farm Coverage</span>
+              <span style="font-size:0.82rem;color:var(--gold);font-weight:600;">78%</span>
+            </div>
+            <div style="background:#f0f7f4;border-radius:100px;height:6px;overflow:hidden;">
+              <div class="progress-bar" data-width="78" style="background:linear-gradient(90deg,var(--forest-light),var(--gold));height:100%;border-radius:100px;width:0;transition:width 1.5s ease;"></div>
+            </div>
+          </div>
+ 
+          <div style="margin-bottom:1.75rem;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;">
+              <span style="font-size:0.82rem;font-weight:500;color:var(--charcoal);">Solar Irrigation Adoption</span>
+              <span style="font-size:0.82rem;color:var(--gold);font-weight:600;">65%</span>
+            </div>
+            <div style="background:#f0f7f4;border-radius:100px;height:6px;overflow:hidden;">
+              <div class="progress-bar" data-width="65" style="background:linear-gradient(90deg,var(--forest-light),var(--gold));height:100%;border-radius:100px;width:0;transition:width 1.5s ease 0.2s;"></div>
+            </div>
+          </div>
+ 
+          <div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;">
+              <span style="font-size:0.82rem;font-weight:500;color:var(--charcoal);">Youth Placement Rate</span>
+              <span style="font-size:0.82rem;color:var(--gold);font-weight:600;">91%</span>
+            </div>
+            <div style="background:#f0f7f4;border-radius:100px;height:6px;overflow:hidden;">
+              <div class="progress-bar" data-width="91" style="background:linear-gradient(90deg,var(--forest-light),var(--gold));height:100%;border-radius:100px;width:0;transition:width 1.5s ease 0.4s;"></div>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Timeline -->
+        <div>
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.75rem;font-weight:400;color:var(--forest-deep);margin-bottom:2rem;">Strategic Milestones</h3>
+          <div style="display:flex;flex-direction:column;gap:1.25rem;">
+            <div class="timeline-item">
+              <div style="font-size:0.85rem;font-weight:500;color:var(--charcoal);">Company Incorporation</div>
+              <div style="font-size:0.78rem;color:var(--muted);margin-top:0.2rem;">Registered as Venture Agritech Ltd, Nigeria — 2024</div>
+            </div>
+            <div class="timeline-item">
+              <div style="font-size:0.85rem;font-weight:500;color:var(--charcoal);">Osun State Land Allocation</div>
+              <div style="font-size:0.78rem;color:var(--muted);margin-top:0.2rem;">10 hectares formally allocated by the Osun State Government</div>
+            </div>
+            <div class="timeline-item">
+              <div style="font-size:0.85rem;font-weight:500;color:var(--charcoal);">Smart Lab Pilot Launch</div>
+              <div style="font-size:0.78rem;color:var(--muted);margin-top:0.2rem;">Precision farming technologies deployed on pilot plots</div>
+            </div>
+            <div class="timeline-item">
+              <div style="font-size:0.85rem;font-weight:500;color:var(--charcoal);">National Policy Engagement</div>
+              <div style="font-size:0.78rem;color:var(--muted);margin-top:0.2rem;">5+ dialogues with state ministries and development partners</div>
+            </div>
+            <div class="timeline-item">
+              <div style="font-size:0.85rem;font-weight:600;color:var(--forest);">Series A Investment Round</div>
+              <div style="font-size:0.78rem;color:var(--gold);margin-top:0.2rem;font-weight:500;">Now Open — Seeking Strategic Partners</div>
+            </div>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ 
+ 
+<!-- ============================================================
+     SMART LAB
+     ============================================================ -->
+<section id="smartlab" style="padding:7rem 0;background:var(--forest-deep);">
+  <div class="max-w-7xl mx-auto px-6">
+ 
+    <!-- Intro Grid -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start;margin-bottom:4rem;" class="md-grid-1">
+ 
+      <!-- Left -->
+      <div class="reveal">
+        <div class="section-label" style="color:var(--gold-light);">
+          <span style="display:block;width:24px;height:1px;background:var(--gold);"></span>
+          The Smart Lab
+        </div>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,4vw,3.75rem);font-weight:300;line-height:1.1;letter-spacing:-0.02em;color:var(--ivory);margin-bottom:1.5rem;">
+          A Living<br><span style="font-style:italic;color:var(--gold);">Laboratory</span><br>for the Future
+        </h2>
+        <div style="width:60px;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-light));margin-bottom:1.5rem;"></div>
+        <p style="color:rgba(250,247,240,0.65);line-height:1.8;font-size:0.95rem;margin-bottom:1.5rem;">
+          Our Founder's background in Electrical &amp; Electronics Engineering isn't incidental — it's the engine of our
+          technological edge. Every hectare is instrumented with sensors, every irrigation decision is data-driven, and
+          every farm is a classroom.
+        </p>
+        <p style="color:rgba(250,247,240,0.65);line-height:1.8;font-size:0.95rem;">
+          The GlobeFarms Smart Lab is where precision agriculture meets African ingenuity: a demonstration site that
+          trains, tests, and transfers technology to smallholder farmers at scale.
+        </p>
+      </div>
+ 
+      <!-- Right: Feature bullets -->
+      <div class="reveal" style="display:flex;flex-direction:column;gap:1rem;padding-top:1rem;">
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(250,247,240,0.08);border-radius:8px;padding:1.5rem 2rem;display:flex;align-items:center;gap:1.5rem;">
+          <div style="width:10px;height:10px;border-radius:50%;background:var(--gold);flex-shrink:0;"></div>
+          <div>
+            <div style="font-size:0.85rem;font-weight:500;color:var(--ivory);">Engineering-Led Design</div>
+            <div style="font-size:0.78rem;color:rgba(250,247,240,0.45);margin-top:0.2rem;">EEE undergraduate expertise applied directly to field systems</div>
+          </div>
+        </div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(250,247,240,0.08);border-radius:8px;padding:1.5rem 2rem;display:flex;align-items:center;gap:1.5rem;">
+          <div style="width:10px;height:10px;border-radius:50%;background:var(--forest-light);flex-shrink:0;"></div>
+          <div>
+            <div style="font-size:0.85rem;font-weight:500;color:var(--ivory);">Replicable at Scale</div>
+            <div style="font-size:0.78rem;color:rgba(250,247,240,0.45);margin-top:0.2rem;">Designed for modular deployment across Nigeria and West Africa</div>
+          </div>
+        </div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(250,247,240,0.08);border-radius:8px;padding:1.5rem 2rem;display:flex;align-items:center;gap:1.5rem;">
+          <div style="width:10px;height:10px;border-radius:50%;background:rgba(250,247,240,0.3);flex-shrink:0;"></div>
+          <div>
+            <div style="font-size:0.85rem;font-weight:500;color:var(--ivory);">Open to Research Partners</div>
+            <div style="font-size:0.78rem;color:rgba(250,247,240,0.45);margin-top:0.2rem;">Universities, NGOs, and development agencies welcome</div>
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+ 
+    <!-- Tech Pillar Cards -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;">
+ 
+      <div class="tech-card reveal">
+        <div class="tech-icon"><i data-lucide="sun" style="width:22px;height:22px;"></i></div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:white;margin-bottom:0.75rem;">Solar Irrigation</h3>
+        <p style="font-size:0.85rem;color:rgba(250,247,240,0.6);line-height:1.7;margin-bottom:1.25rem;">
+          Off-grid solar-powered pump systems ensure 24/7 water availability without diesel dependency —
+          reducing operational costs by up to 60% while cutting carbon footprint.
+        </p>
+        <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);">Deployed on Pilot Plots</div>
+      </div>
+ 
+      <div class="tech-card reveal" style="transition-delay:0.1s;">
+        <div class="tech-icon"><i data-lucide="activity" style="width:22px;height:22px;"></i></div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:white;margin-bottom:0.75rem;">Farm Data Dashboards</h3>
+        <p style="font-size:0.85rem;color:rgba(250,247,240,0.6);line-height:1.7;margin-bottom:1.25rem;">
+          Real-time IoT sensor networks monitor soil moisture, temperature, humidity, and crop health.
+          Aggregated on cloud dashboards accessible via mobile — giving farmers actionable intelligence, not just data.
+        </p>
+        <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);">IoT + Cloud Analytics</div>
+      </div>
+ 
+      <div class="tech-card reveal" style="transition-delay:0.2s;">
+        <div class="tech-icon"><i data-lucide="crosshair" style="width:22px;height:22px;"></i></div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:white;margin-bottom:0.75rem;">Precision Farming</h3>
+        <p style="font-size:0.85rem;color:rgba(250,247,240,0.6);line-height:1.7;margin-bottom:1.25rem;">
+          Variable-rate application of inputs (fertilizer, water, pesticides) guided by GPS field mapping and satellite
+          imagery analysis. Less waste, higher yields, better margins for every farmer.
+        </p>
+        <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);">GPS + Satellite Intelligence</div>
+      </div>
+ 
+      <div class="tech-card reveal" style="transition-delay:0.3s;">
+        <div class="tech-icon"><i data-lucide="graduation-cap" style="width:22px;height:22px;"></i></div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:white;margin-bottom:0.75rem;">AgriTech Training Hub</h3>
+        <p style="font-size:0.85rem;color:rgba(250,247,240,0.6);line-height:1.7;margin-bottom:1.25rem;">
+          The Smart Lab doubles as a live classroom. 6,500+ youth per year experience hands-on training with real
+          equipment, real sensors, and real farms — making the learning irreversible.
+        </p>
+        <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);">6,500+ Annual Trainees</div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+ 
+ 
+<!-- ============================================================
+     STRATEGIC TEAM
+     ============================================================ -->
+<section id="team" style="padding:7rem 0;background:white;">
+  <div class="max-w-7xl mx-auto px-6">
+ 
+    <!-- Section Header -->
+    <div style="text-align:center;margin-bottom:4rem;" class="reveal">
+      <div class="section-label" style="justify-content:center;">Leadership</div>
+      <h2 class="section-title">The <span class="em">strategic minds</span><br>behind the mission</h2>
+      <p style="color:var(--muted);max-width:520px;margin:1.25rem auto 0;line-height:1.7;font-size:0.95rem;">
+        A multi-disciplinary team combining engineering innovation, international finance, environmental strategy,
+        and grassroots market intelligence.
+      </p>
+    </div>
+ 
+    <!-- CEO Featured Card -->
+    <div style="margin-bottom:2rem;" class="reveal">
+      <div style="background:linear-gradient(135deg,var(--forest-deep) 0%,var(--forest) 100%);border-radius:12px;padding:3rem;display:grid;grid-template-columns:auto 1fr auto;gap:3rem;align-items:center;position:relative;overflow:hidden;" class="md-grid-1">
+        <div style="position:absolute;top:-60px;right:-60px;width:280px;height:280px;border-radius:50%;background:rgba(201,168,76,0.08);"></div>
+        <div style="position:absolute;bottom:-40px;left:30%;width:200px;height:200px;border-radius:50%;background:rgba(64,145,108,0.1);"></div>
+ 
+      <div class="avatar" style="background:linear-gradient(135deg,var(--gold),var(--gold-light));width:100px;height:100px;position:relative;overflow:hidden;"> <img src="images/David's pic.png" alt="Engr. Favour David A." style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;" onerror="this.style.display='none'" />
+        </div>
+ 
+        <div style="position:relative;z-index:1;">
+          <div style="font-size:0.7rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;">Founder &amp; Managing Director / CEO</div>
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:400;color:white;margin-bottom:0.75rem;">Engr. Favour David . A</h3>
+          <p style="font-size:0.88rem;color:rgba(250,247,240,0.65);line-height:1.7;max-width:600px;">
+Engr. Favour David, founder of GlobeFarms Venture Agritech Ltd, is an Electrical Engineering student at AFIT driving transformative change in Nigeria’s agricultural sector. He leads one of Southwest Nigeria’s largest youth-led agritech platforms, managing 315+ hectares of smart farmland. By integrating technology and mentorship, Favour provides scalable solutions for youth inclusion and food security, positioning him as a leading voice in Nigeria’s inclusive growth.
+          </p>
+          <div style="margin-top:1.25rem;display:flex;flex-wrap:wrap;gap:0.75rem;">
+            <span style="background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.3);color:var(--gold-light);padding:0.3rem 0.875rem;border-radius:100px;font-size:0.72rem;font-weight:500;letter-spacing:0.05em;">EEE Engineering</span>
+            <span style="background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.3);color:var(--gold-light);padding:0.3rem 0.875rem;border-radius:100px;font-size:0.72rem;font-weight:500;letter-spacing:0.05em;">Precision Agritech</span>
+            <span style="background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.3);color:var(--gold-light);padding:0.3rem 0.875rem;border-radius:100px;font-size:0.72rem;font-weight:500;letter-spacing:0.05em;">IoT Systems</span>
+            <span style="background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.3);color:var(--gold-light);padding:0.3rem 0.875rem;border-radius:100px;font-size:0.72rem;font-weight:500;letter-spacing:0.05em;">Strategic Leadership</span>
+          </div>
+        </div>
+ 
+        <div style="position:relative;z-index:1;text-align:center;padding:1.5rem;background:rgba(255,255,255,0.06);border-radius:8px;border:1px solid rgba(255,255,255,0.1);min-width:140px;">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:600;color:var(--gold);line-height:1;">20</div>
+          <div style="font-size:0.7rem;color:rgba(250,247,240,0.45);margin-top:0.25rem;letter-spacing:0.08em;text-transform:uppercase;">Years Old</div>
+          <div style="width:40px;height:1px;background:rgba(201,168,76,0.3);margin:0.75rem auto;"></div>
+          <div style="font-size:0.72rem;color:rgba(250,247,240,0.5);">Nigeria's youngest<br>Agritech CEO</div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Team Grid -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;">
+ 
+      <!-- Bidemi -->
+      <div class="team-card reveal">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;">
+          <div class="avatar" style="background:linear-gradient(135deg,#1e6b47,var(--forest-light));">BF</div>
+          <div>
+            <div style="font-size:0.68rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.25rem;">Infrastructure &amp; Environmental Advisor</div>
+            <h4 style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--forest-deep);">Bidemi Festus Alamu</h4>
+          </div>
+        </div>
+        <div class="gold-divider" style="width:36px;"></div>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.7;margin-top:1rem;">
+          A seasoned infrastructure and environmental specialist with extensive experience across Canada and Nigeria.
+          Bidemi brings cross-continental perspective to our land development, climate resilience planning, and sustainable
+          infrastructure build-out — ensuring GlobeFarms operations meet international environmental standards.
+        </p>
+        <div style="margin-top:1.25rem;display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <span style="background:#f0f7f4;color:var(--forest);padding:0.25rem 0.75rem;border-radius:100px;font-size:0.72rem;font-weight:500;">🇨🇦 Canada Experience</span>
+          <span style="background:#f0f7f4;color:var(--forest);padding:0.25rem 0.75rem;border-radius:100px;font-size:0.72rem;font-weight:500;">Environmental Strategy</span>
+        </div>
+      </div>
+ 
+      <!-- Tosin -->
+      <div class="team-card reveal" style="transition-delay:0.1s;">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;">
+          <div class="avatar" style="background:linear-gradient(135deg,#8B6914,var(--gold));">TL</div>
+          <div>
+            <div style="font-size:0.68rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.25rem;">Financial Adviser</div>
+            <h4 style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--forest-deep);">Tosin Lawal, MBA</h4>
+          </div>
+        </div>
+        <div class="gold-divider" style="width:36px;"></div>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.7;margin-top:1rem;">
+          Tosin is a 25-year-old Agribusiness and Financial Management professional with over four years of experience, including roles at the Development Bank of Nigeria and X3 Staffing (Canada). She holds an MBA from University Canada West and an Accounting degree from ABUAD. She leverages her financial expertise to build inclusive agribusiness models and youth-led ecosystems that drive leadership and food security.
+        </p>
+        <div style="margin-top:1.25rem;display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <span style="background:#faf5e4;color:#8B6914;padding:0.25rem 0.75rem;border-radius:100px;font-size:0.72rem;font-weight:500;">🇨🇦 MBA — Canada</span>
+          <span style="background:#faf5e4;color:#8B6914;padding:0.25rem 0.75rem;border-radius:100px;font-size:0.72rem;font-weight:500;">Investment Structuring</span>
+        </div>
+      </div>
+ 
+      <!-- Taiwo -->
+      <div class="team-card reveal" style="transition-delay:0.2s;">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;">
+          <div class="avatar" style="background:linear-gradient(135deg,#2d4a8a,#4a72d4);">TJ</div>
+          <div>
+            <div style="font-size:0.68rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.25rem;">Market Specialist</div>
+            <h4 style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--forest-deep);">Taiwo Blessing Jolayemi</h4>
+          </div>
+        </div>
+        <div class="gold-divider" style="width:36px;"></div>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.7;margin-top:1rem;">
+          Taiwo is a 29-year-old Agribusiness and Youth Development professional with a background in Psychology (University of Ilorin) and a Personal Support Worker certification from Seneca Polytechnic. She applies a people-centered approach to empower young people through mentorship and skills development. Her work at GlobeFarms focuses on driving youth participation in agriculture and fostering sustainable community-based livelihoods.
+        </p>
+        <div style="margin-top:1.25rem;display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <span style="background:#eef2ff;color:#3730a3;padding:0.25rem 0.75rem;border-radius:100px;font-size:0.72rem;font-weight:500;">Market Intelligence</span>
+          <span style="background:#eef2ff;color:#3730a3;padding:0.25rem 0.75rem;border-radius:100px;font-size:0.72rem;font-weight:500;">Value Chain Strategy</span>
+        </div>
+      </div>
+ 
+      <!-- Blessing Esther -->
+      <div class="team-card reveal" style="transition-delay:0.3s;">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;">
+          <div class="avatar" style="background:linear-gradient(135deg,#7e2d8a,#c45cd4);">BE</div>
+          <div>
+            <div style="font-size:0.68rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.25rem;">Youth Representative</div>
+            <h4 style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--forest-deep);">Blessing Esther A.</h4>
+          </div>
+        </div>
+        <div class="gold-divider" style="width:36px;"></div>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.7;margin-top:1rem;">
+          Blessing is an 18-year-old Medical (MBBS) student at Igbinedion University and a shareholder in GlobeFarms Venture Agritech Ltd. As a Youth Representative, she champions the voice of young people within the organization. Her work focuses on the intersection of health, nutrition, and agriculture, supporting programs that promote youth well-being and social impact.
+        </p>
+        <div style="margin-top:1.25rem;display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <span style="background:#fdf2ff;color:#7e2d8a;padding:0.25rem 0.75rem;border-radius:100px;font-size:0.72rem;font-weight:500;">Youth Advocacy</span>
+          <span style="background:#fdf2ff;color:#7e2d8a;padding:0.25rem 0.75rem;border-radius:100px;font-size:0.72rem;font-weight:500;">Community Engagement</span>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+ 
+ 
+<!-- ============================================================
+     WHY INVEST
+     ============================================================ -->
+<section style="padding:7rem 0;background:var(--cream);">
+  <div class="max-w-7xl mx-auto px-6">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;" class="md-grid-1">
+ 
+      <!-- Left -->
+      <div class="reveal">
+        <div class="section-label">Investment Thesis</div>
+        <h2 class="section-title" style="margin-bottom:1.5rem;">Why <span class="em">GlobeFarms</span><br>is the right bet</h2>
+        <div class="gold-divider"></div>
+        <p style="color:var(--muted);line-height:1.8;font-size:0.95rem;margin-top:1.5rem;margin-bottom:2rem;">
+          Africa's agricultural sector is a $1 trillion opportunity. Nigeria alone loses $9 billion annually to
+          post-harvest inefficiencies. GlobeFarms sits at the exact intersection of youth population dividend,
+          smartphone-enabled smallholders, and climate-necessitated precision agriculture.
+        </p>
+        <a href="#contact" class="btn-primary" style="background:var(--forest);color:white;display:inline-flex;">
+          Request Investment Deck
+          <i data-lucide="file-text" style="width:16px;height:16px;"></i>
+        </a>
+      </div>
+ 
+      <!-- Right: Trust bullets -->
+      <div class="reveal" style="display:flex;flex-direction:column;gap:1.25rem;">
+ 
+        <div style="background:white;border-radius:8px;padding:1.75rem 2rem;border:1px solid rgba(27,67,50,0.08);display:flex;gap:1.5rem;align-items:flex-start;transition:all 0.3s ease;"
+             onmouseover="this.style.boxShadow='0 12px 40px rgba(27,67,50,0.1)'"
+             onmouseout="this.style.boxShadow='none'">
+          <div style="width:40px;height:40px;background:#f0f7f4;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--forest-light);">
+            <i data-lucide="shield-check" style="width:18px;height:18px;"></i>
+          </div>
+          <div>
+            <h4 style="font-weight:600;font-size:0.9rem;color:var(--forest-deep);margin-bottom:0.4rem;">Government Endorsement</h4>
+            <p style="font-size:0.83rem;color:var(--muted);line-height:1.6;">Formal land allocation by Osun State Government validates our model and de-risks investment with sovereign-level backing.</p>
+          </div>
+        </div>
+ 
+        <div style="background:white;border-radius:8px;padding:1.75rem 2rem;border:1px solid rgba(27,67,50,0.08);display:flex;gap:1.5rem;align-items:flex-start;transition:all 0.3s ease;"
+             onmouseover="this.style.boxShadow='0 12px 40px rgba(27,67,50,0.1)'"
+             onmouseout="this.style.boxShadow='none'">
+          <div style="width:40px;height:40px;background:#f0f7f4;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--forest-light);">
+            <i data-lucide="zap" style="width:18px;height:18px;"></i>
+          </div>
+          <div>
+            <h4 style="font-weight:600;font-size:0.9rem;color:var(--forest-deep);margin-bottom:0.4rem;">Proven Technology Stack</h4>
+            <p style="font-size:0.83rem;color:var(--muted);line-height:1.6;">Solar irrigation, IoT sensors, and precision agriculture tools are already deployed and delivering measurable results.</p>
+          </div>
+        </div>
+ 
+        <div style="background:white;border-radius:8px;padding:1.75rem 2rem;border:1px solid rgba(27,67,50,0.08);display:flex;gap:1.5rem;align-items:flex-start;transition:all 0.3s ease;"
+             onmouseover="this.style.boxShadow='0 12px 40px rgba(27,67,50,0.1)'"
+             onmouseout="this.style.boxShadow='none'">
+          <div style="width:40px;height:40px;background:#f0f7f4;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--forest-light);">
+            <i data-lucide="globe" style="width:18px;height:18px;"></i>
+          </div>
+          <div>
+            <h4 style="font-weight:600;font-size:0.9rem;color:var(--forest-deep);margin-bottom:0.4rem;">International-Grade Advisory</h4>
+            <p style="font-size:0.83rem;color:var(--muted);line-height:1.6;">Canada-experienced financial and environmental advisors ensure GlobeFarms operates to international governance and reporting standards.</p>
+          </div>
+        </div>
+ 
+        <div style="background:white;border-radius:8px;padding:1.75rem 2rem;border:1px solid rgba(27,67,50,0.08);display:flex;gap:1.5rem;align-items:flex-start;transition:all 0.3s ease;"
+             onmouseover="this.style.boxShadow='0 12px 40px rgba(27,67,50,0.1)'"
+             onmouseout="this.style.boxShadow='none'">
+          <div style="width:40px;height:40px;background:#f0f7f4;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--forest-light);">
+            <i data-lucide="repeat" style="width:18px;height:18px;"></i>
+          </div>
+          <div>
+            <h4 style="font-weight:600;font-size:0.9rem;color:var(--forest-deep);margin-bottom:0.4rem;">Scalable &amp; Replicable Model</h4>
+            <p style="font-size:0.83rem;color:var(--muted);line-height:1.6;">Our hub-and-spoke smart farming model is designed for rapid state-by-state and regional expansion across West Africa.</p>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+</section>
+ 
+ 
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section id="contact" style="padding:7rem 0;background:var(--forest-deep);position:relative;overflow:hidden;">
+  <div style="position:absolute;top:-100px;right:-100px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,0.08) 0%,transparent 70%);"></div>
+  <div style="position:absolute;bottom:-80px;left:-80px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(64,145,108,0.1) 0%,transparent 70%);"></div>
+ 
+  <div class="max-w-7xl mx-auto px-6 text-center" style="position:relative;z-index:1;">
+ 
+    <div class="reveal">
+      <div class="section-label" style="justify-content:center;color:var(--gold-light);">
+        <span style="display:block;width:24px;height:1px;background:var(--gold);"></span>
+        Get In Touch
+      </div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.75rem,5vw,4.5rem);font-weight:300;color:var(--ivory);line-height:1.1;margin-bottom:1.5rem;letter-spacing:-0.02em;">
+        Ready to <span style="font-style:italic;color:var(--gold);">invest</span><br>in Africa's food future?
+      </h2>
+      <p style="color:rgba(250,247,240,0.55);max-width:540px;margin:0 auto 3rem;line-height:1.8;font-size:1rem;">
+        We are actively seeking investment partners, grant opportunities, and strategic collaborators who share
+        our vision for a data-driven, youth-powered agricultural Africa.
+      </p>
+    </div>
+ 
+    <!-- Contact Info Cards -->
+    <div class="reveal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;max-width:800px;margin:0 auto 3rem;">
+ 
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(250,247,240,0.1);border-radius:8px;padding:2rem;text-align:left;transition:all 0.3s ease;"
+           onmouseover="this.style.background='rgba(201,168,76,0.08)'"
+           onmouseout="this.style.background='rgba(255,255,255,0.05)'">
+        <div style="color:var(--gold);margin-bottom:1rem;"><i data-lucide="mail" style="width:22px;height:22px;"></i></div>
+        <div style="font-size:0.72rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,247,240,0.4);margin-bottom:0.4rem;">Email</div>
+        <div style="font-size:0.88rem;color:var(--ivory);">info@globefarmsagritech.com</div>
+      </div>
+ 
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(250,247,240,0.1);border-radius:8px;padding:2rem;text-align:left;transition:all 0.3s ease;"
+           onmouseover="this.style.background='rgba(201,168,76,0.08)'"
+           onmouseout="this.style.background='rgba(255,255,255,0.05)'">
+        <div style="color:var(--gold);margin-bottom:1rem;"><i data-lucide="map-pin" style="width:22px;height:22px;"></i></div>
+        <div style="font-size:0.72rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,247,240,0.4);margin-bottom:0.4rem;">Headquarters</div>
+        <div style="font-size:0.88rem;color:var(--ivory);">Osun State, Nigeria</div>
+      </div>
+ 
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(250,247,240,0.1);border-radius:8px;padding:2rem;text-align:left;transition:all 0.3s ease;"
+           onmouseover="this.style.background='rgba(201,168,76,0.08)'"
+           onmouseout="this.style.background='rgba(255,255,255,0.05)'">
+        <div style="color:var(--gold);margin-bottom:1rem;"><i data-lucide="briefcase" style="width:22px;height:22px;"></i></div>
+        <div style="font-size:0.72rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,247,240,0.4);margin-bottom:0.4rem;">Investment Stage</div>
+        <div style="font-size:0.88rem;color:var(--ivory);">Series A — Open</div>
+      </div>
+ 
+    </div>
+ 
+    <!-- CTA Buttons -->
+    <div class="reveal" style="display:flex;justify-content:center;flex-wrap:wrap;gap:1rem;">
+      <a href="mailto:info@globefarmsagritech.com" class="btn-primary" style="font-size:0.9rem;padding:1rem 2.25rem;">
+        <i data-lucide="send" style="width:16px;height:16px;"></i>
+        Send Investment Inquiry
+      </a>
+      <a href="#impact" class="btn-outline" style="font-size:0.9rem;padding:1rem 2.25rem;">
+        View Our Impact Data
+      </a>
+    </div>
+ 
+  </div>
+</section>
+ 
+ 
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer-bg" style="padding:3rem 0;border-top:1px solid rgba(250,247,240,0.06);">
+  <div class="max-w-7xl mx-auto px-6">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;">
+ 
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--ivory);margin-bottom:0.3rem;">GlobeFarms Venture Agritech Ltd</div>
+        <div style="font-size:0.78rem;color:rgba(250,247,240,0.35);">Osun State, Nigeria · Registered 2024 · RC No. Pending</div>
+      </div>
+ 
+      <div style="display:flex;gap:2rem;flex-wrap:wrap;">
+        <a href="#about"    style="font-size:0.8rem;color:rgba(250,247,240,0.4);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='rgba(250,247,240,0.8)'" onmouseout="this.style.color='rgba(250,247,240,0.4)'">About</a>
+        <a href="#impact"   style="font-size:0.8rem;color:rgba(250,247,240,0.4);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='rgba(250,247,240,0.8)'" onmouseout="this.style.color='rgba(250,247,240,0.4)'">Impact</a>
+        <a href="#smartlab" style="font-size:0.8rem;color:rgba(250,247,240,0.4);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='rgba(250,247,240,0.8)'" onmouseout="this.style.color='rgba(250,247,240,0.4)'">Smart Lab</a>
+        <a href="#team"     style="font-size:0.8rem;color:rgba(250,247,240,0.4);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='rgba(250,247,240,0.8)'" onmouseout="this.style.color='rgba(250,247,240,0.4)'">Team</a>
+      </div>
+ 
+      <div style="font-size:0.75rem;color:rgba(250,247,240,0.25);">
+        &copy; 2024 GlobeFarms Venture Agritech Ltd. All rights reserved.
+      </div>
+ 
+    </div>
+  </div>
+</footer>
+ 
+ 
+<!-- ============================================================
+     SCRIPTS (loaded at end of body for best performance)
+     ============================================================ -->
+<script src="main.js"></script>
+ 
+</body>
+</html>

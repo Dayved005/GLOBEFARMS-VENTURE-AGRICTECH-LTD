@@ -1,0 +1,476 @@
+/* ============================================================
+   GlobeFarms Venture Agritech Ltd — Main Stylesheet
+   styles.css
+   ============================================================ */
+
+/* ---------- CSS VARIABLES ---------- */
+:root {
+  --forest:       #1B4332;
+  --forest-deep:  #0f2a1f;
+  --forest-mid:   #2d6a4f;
+  --forest-light: #40916c;
+  --gold:         #C9A84C;
+  --gold-light:   #e8c97a;
+  --gold-pale:    #f5e6b8;
+  --ivory:        #FAF7F0;
+  --ivory-dark:   #F0EAD6;
+  --cream:        #F5F0E8;
+  --charcoal:     #1a1a1a;
+  --muted:        #5a6a5f;
+}
+
+/* ---------- RESET & BASE ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--ivory);
+  color: var(--charcoal);
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* ---------- NAVIGATION ---------- */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 999;
+  transition: all 0.4s ease;
+  padding: 1.25rem 0;
+}
+
+nav.scrolled {
+  background: rgba(250, 247, 240, 0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+  padding: 0.75rem 0;
+  box-shadow: 0 2px 40px rgba(27, 67, 50, 0.08);
+}
+
+#mobile-menu {
+  display: none;
+}
+
+#mobile-menu.open {
+  display: block;
+}
+
+/* ---------- HERO ---------- */
+.hero-bg {
+  background: var(--forest-deep);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.06;
+  background-image:
+    linear-gradient(rgba(201, 168, 76, 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 168, 76, 0.5) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.hero-glow {
+  position: absolute;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(64, 145, 108, 0.25) 0%, transparent 70%);
+  top: -100px; right: -100px;
+}
+
+.hero-glow-2 {
+  position: absolute;
+  width: 400px; height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.12) 0%, transparent 70%);
+  bottom: -50px; left: 10%;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(201, 168, 76, 0.15);
+  border: 1px solid rgba(201, 168, 76, 0.4);
+  color: var(--gold-light);
+  padding: 0.375rem 1rem;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  font-weight: 300;
+  line-height: 1.05;
+  color: var(--ivory);
+  letter-spacing: -0.02em;
+}
+
+.hero-title .accent {
+  color: var(--gold);
+  font-style: italic;
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: rgba(250, 247, 240, 0.6);
+  font-weight: 300;
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--gold);
+  color: var(--forest-deep);
+  padding: 0.875rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(201, 168, 76, 0.35);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(250, 247, 240, 0.3);
+  color: rgba(250, 247, 240, 0.85);
+  padding: 0.875rem 2rem;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  border-color: rgba(250, 247, 240, 0.7);
+  background: rgba(250, 247, 240, 0.08);
+}
+
+/* ---------- STAT CARDS ---------- */
+.stat-card {
+  background: white;
+  border: 1px solid rgba(27, 67, 50, 0.08);
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--forest-light), var(--gold));
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(27, 67, 50, 0.12);
+}
+
+.stat-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 600;
+  color: var(--forest);
+  line-height: 1;
+}
+
+/* ---------- SECTION LABELS & TITLES ---------- */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--forest-light);
+  margin-bottom: 1rem;
+}
+
+.section-label::before {
+  content: '';
+  display: block;
+  width: 24px; height: 1px;
+  background: var(--gold);
+}
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.5rem, 4vw, 3.75rem);
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--forest-deep);
+  letter-spacing: -0.02em;
+}
+
+.section-title .em {
+  font-style: italic;
+  color: var(--forest-light);
+}
+
+img.avatar {
+  object-fit: cover;
+  object-position: center top;  /* keeps faces visible, not cropped at forehead */
+}
+
+/* ---------- TECH CARDS ---------- */
+.tech-card {
+  background: var(--forest);
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.tech-card::after {
+  content: '';
+  position: absolute;
+  bottom: -40px; right: -40px;
+  width: 140px; height: 140px;
+  border-radius: 50%;
+  background: rgba(201, 168, 76, 0.08);
+  transition: all 0.5s ease;
+}
+
+.tech-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(27, 67, 50, 0.3);
+}
+
+.tech-card:hover::after {
+  transform: scale(1.8);
+}
+
+.tech-icon {
+  width: 52px; height: 52px;
+  background: rgba(201, 168, 76, 0.15);
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: var(--gold);
+}
+
+/* ---------- TEAM CARDS ---------- */
+.team-card {
+  background: white;
+  border: 1px solid rgba(27, 67, 50, 0.08);
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--gold), var(--forest-light));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(27, 67, 50, 0.1);
+}
+
+.team-card:hover::before {
+  opacity: 1;
+}
+
+.avatar {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  flex-shrink: 0;
+}
+
+/* ---------- TIMELINE ---------- */
+.timeline-item {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 8px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--gold);
+  border: 2px solid var(--ivory);
+  outline: 1px solid var(--gold);
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  left: 4px; top: 22px; bottom: -24px;
+  width: 1px;
+  background: rgba(201, 168, 76, 0.25);
+}
+
+.timeline-item:last-child::after {
+  display: none;
+}
+
+/* ---------- MISC COMPONENTS ---------- */
+.gold-divider {
+  width: 60px; height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  margin: 1.5rem 0;
+}
+
+.footer-bg {
+  background: var(--forest-deep);
+}
+
+.impact-bg {
+  background: linear-gradient(135deg, #f0f7f4 0%, var(--ivory) 100%);
+}
+
+.quote-block {
+  border-left: 3px solid var(--gold);
+  padding-left: 1.5rem;
+}
+
+/* ---------- MARQUEE ---------- */
+.marquee-wrapper {
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 3rem;
+  animation: marquee 22s linear infinite;
+  white-space: nowrap;
+}
+
+/* ---------- SCROLL INDICATOR ---------- */
+.scroll-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: rgba(250, 247, 240, 0.4);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.scroll-line {
+  width: 40px; height: 1px;
+  background: rgba(250, 247, 240, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-line::after {
+  content: '';
+  position: absolute;
+  left: -100%; top: 0;
+  width: 100%; height: 100%;
+  background: var(--gold);
+  animation: scrollLine 2s ease-in-out infinite;
+}
+
+/* ---------- ANIMATIONS ---------- */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes scrollLine {
+  to { left: 100%; }
+}
+
+.animate-fade-up { animation: fadeInUp 0.8s ease forwards; }
+.animate-fade    { animation: fadeIn 1s ease forwards; }
+
+/* Hero entrance animations */
+.hero-enter          { animation: fadeInUp 1s ease forwards; }
+.hero-enter-delay-1  { animation: fadeInUp 1s ease 0.15s both; }
+.hero-enter-delay-2  { animation: fadeInUp 1s ease 0.30s both; }
+.hero-enter-delay-3  { animation: fadeInUp 1s ease 0.45s both; }
+.hero-enter-delay-4  { animation: fadeInUp 1s ease 0.60s both; }
+
+/* Scroll-reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .hero-title    { font-size: 2.75rem; }
+  .section-title { font-size: 2.25rem; }
+  .md-grid-1     { grid-template-columns: 1fr !important; gap: 3rem !important; }
+}
