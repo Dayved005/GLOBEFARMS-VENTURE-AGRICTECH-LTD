@@ -66,6 +66,114 @@ nav.scrolled {
   display: block;
 }
 
+.navbar {
+  border-bottom: 1px none rgba(27, 67, 50, 0.08);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 60px;
+  object-fit: contain;
+}
+
+.logo-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(5, 131, 5);
+}
+
+.logo-sub {
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Desktop */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--forest);
+}
+
+/* Button */
+.btn-primary {
+  padding: 0.6rem 1.4rem;
+  font-size: 0.82rem;
+}
+
+/* Mobile */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-btn i {
+  width: 22px;
+  height: 22px;
+  color: var(--forest);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-top: 0px solid rgba(0,0,0,0.05);
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  top: 0; left: 0; right: 0;
+  gap: 1rem;
+  padding: 0 1.5rem;
+}
+
+.mobile-menu.active {
+  max-height: 300px;
+  padding: 1rem 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
 /* ---------- HERO ---------- */
 .hero-bg {
   background: var(--forest-deep);
@@ -247,6 +355,17 @@ img.avatar {
   object-fit: cover;
   object-position: center top;  /* keeps faces visible, not cropped at forehead */
 }
+
+/* Hamburger icon darkens on hover, no background */
+  #menuBtn:hover i {
+    color: var(--forest-deep) !important;
+    transform: scale(1.15);
+  }
+
+/* Restore original colors once navbar turns white on scroll */
+  nav.scrolled .logo-img {
+    filter: none;
+  }
 
 /* ---------- TECH CARDS ---------- */
 .tech-card {
